@@ -25,7 +25,7 @@ SECRET_KEY = 'arun'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://notifier896.herokuapp.com','127.0.0.1']
 
 
 WSGI_APPLICATION = 'arun.wsgi.application'
