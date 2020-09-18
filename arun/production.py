@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 
 
 DEBUG = False
-ALLOWED_HOSTS = ['notifier999.herokuapp.com']
+ALLOWED_HOSTS = ['https://notifier896.herokuapp.com']
 SECRET_KEY = os.environ.get('SECRET_KEY', 'arun')  
 
 

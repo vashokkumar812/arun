@@ -1,8 +1,9 @@
-
 import os
-import django
-from channels.routing import get_default_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "arun.settings")
-django.setup()
-application = get_default_application()
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "chat.settings")
+
+application = get_wsgi_application()
+application = DjangoWhiteNoise(application)
